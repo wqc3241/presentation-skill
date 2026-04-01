@@ -202,6 +202,12 @@ These principles come from iterative user feedback and reflect what makes a pres
 
 **Consistent color mode.** All slides must use the same background treatment. Never mix dark-mode slides with light-mode slides in the same deck — it feels jarring and unprofessional. Pick one and commit.
 
+**Highlight critical data, de-emphasize connective elements.** The most important information on a slide should be the most visually prominent. Badges and callouts for key data points (e.g., "#1 Drop-off", "~1 Week Wait") should use solid, high-contrast backgrounds (white text on dark fill) — never faded or transparent treatments. Conversely, connective elements like arrows between funnel steps should be subtle (small size, low opacity, muted color). They are structural, not informational.
+
+**Specific, descriptive labels.** Labels should tell the audience *what kind* of thing it is, not just a generic category. "Web Visits / In-Studio Visits" is more informative than "Site Visits." "Hypothesis A/B Testing" communicates intent better than "Pre-launch A/B Testing." When writing labels, ask: would someone unfamiliar with the project understand what this means?
+
+**Align paired columns on both edges.** When two columns sit side by side (e.g., a funnel visualization next to a methods list), they should stretch to match each other's top and bottom edges. Use `align-items: stretch` on the grid container and `justify-content: space-between` on each column's flex container so content distributes evenly across the full height.
+
 ## Step 4: Verify the Presentation
 
 After generating the HTML file, verify it works:
