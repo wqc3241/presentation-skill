@@ -184,6 +184,24 @@ Presentations are viewed on screens, not read like documents. Each slide must fi
 
 If a slide has too much content, reduce font sizes and padding rather than allowing scroll. If it still doesn't fit, split into two slides.
 
+### Design Principles
+
+These principles come from iterative user feedback and reflect what makes a presentation feel polished versus rough. Follow them closely.
+
+**Bullet points over arrow chains.** When showing lists, comparisons (before/after), processes, or metrics, use clean bullet points — not inline arrow-connected flows (`A → B → C`). Arrow chains look cluttered and are hard to scan. Bullet points are faster to read and easier to align.
+
+**Grid alignment across stacked sections.** If two sections sit above and below each other (e.g., a Before/After comparison above a Primary/Guardrail metrics section), they must share the exact same CSS grid structure — same `grid-template-columns`, same gap. When columns visually align top-to-bottom, the slide looks intentionally designed. When they don't, it looks sloppy. This is one of the most common sources of "something feels off" feedback.
+
+**Impact-focused subtitles.** The subtitle on a title slide should describe the *outcome and impact* of the work, not the presenter's job title or role. Write it as a statement of what was achieved: "Driving 30% conversion and $62M revenue growth by rebuilding the digital purchasing journey" — not "Product Manager, PLG — Case Study Presentation."
+
+**Plain language in labels.** Avoid vendor names, technical jargon, or internal terminology in visible labels. Write for the audience, not for the engineering spec. Use "Instant credit decision via API" not "Instant credit decision via DealerTrack API." Use "Deposit Conversion Rate" not "Deposit-to-Delivery."
+
+**Remove decorative clutter.** Every visual element should earn its place. If an arrow divider between two cards doesn't add clarity — remove it. If a badge/tag at the top of a title slide just restates the obvious — remove it. If a pill-shaped container around nav dots adds visual noise — make it transparent. When in doubt, remove.
+
+**Generous spacing between content blocks.** Distinct content sections (e.g., stat cards vs. before/after comparison vs. metrics definitions) need visible breathing room between them. Use 16-24px margins between major sections. Cramped slides feel overwhelming even when the content itself is fine.
+
+**Consistent color mode.** All slides must use the same background treatment. Never mix dark-mode slides with light-mode slides in the same deck — it feels jarring and unprofessional. Pick one and commit.
+
 ## Step 4: Verify the Presentation
 
 After generating the HTML file, verify it works:
@@ -238,17 +256,17 @@ After publishing, tell the user:
 
 Use these as building blocks when designing slides:
 
-**Title Slide:** Badge/tag at top, large serif title with accent-colored keyword, subtitle, 3 hero stat cards, context paragraph, metric tags.
+**Title Slide:** Large serif title with one accent-colored keyword. Impact-focused subtitle (outcome, not role). 3 hero stat cards with large numbers and uppercase labels. Before/After comparison using side-by-side cards with bullet points (no arrow chains). Primary and guardrail metrics as bulleted lists in a 2-column grid aligned to the same columns as the comparison above.
 
-**Discovery / Analysis Slide:** Two-column layout — funnel/process visualization on the left, card list on the right. Hypothesis bar at bottom.
+**Discovery / Analysis Slide:** Two-column layout — funnel/process visualization on the left, card list on the right. Hypothesis bar at bottom with items in a horizontal grid.
 
-**Journey / Flow Slide:** Horizontal phase bar with color-coded sections, product cards below each phase with metric tags.
+**Journey / Flow Slide:** Horizontal phase bar with color-coded sections, product cards below each phase with metric tags. Include a legend for the metric tag colors.
 
-**Strategy / Timeline Slide:** 3 phase cards side-by-side with colored top borders, result callouts in accent-glow boxes. Callout box in primary color for key narrative.
+**Strategy / Timeline Slide:** 3 phase cards side-by-side with colored top borders, result callouts in accent-glow boxes. Stakeholder narrative callout in primary color. GTM collaboration summary and team composition at the bottom.
 
-**Results / Metrics Slide:** 3x2 grid of metric tiles (large serif numbers, small uppercase labels), 2x2 grid of learning cards with accent left border.
+**Results / Metrics Slide:** 3x2 grid of metric tiles (large serif numbers, small uppercase labels). 2x2 grid of learning cards with accent left border. Include one "what surprised me" or self-reflection learning to show intellectual humility.
 
-**Bridge / Application Slide:** Context paragraph, 3 focus-area cards with numbered badges and parallel callouts, primary-colored action-plan box, italic closing statement.
+**Bridge / Application Slide:** Context paragraph referencing specific company knowledge (recent acquisitions, product launches, public metrics). 3 focus-area cards with numbered badges and parallels to the case study. Action-plan box (e.g., "First 90 Days") with concrete steps. Italic closing statement.
 
 ---
 
