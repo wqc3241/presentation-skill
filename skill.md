@@ -208,6 +208,20 @@ These principles come from iterative user feedback and reflect what makes a pres
 
 **Align paired columns on both edges.** When two columns sit side by side (e.g., a funnel visualization next to a methods list), they should stretch to match each other's top and bottom edges. Use `align-items: stretch` on the grid container and `justify-content: space-between` on each column's flex container so content distributes evenly across the full height.
 
+**Label consistency across slides.** If a metric is called "Deposit Conversion Rate" on one slide, it must use exactly the same name on every other slide that references it. Inconsistent labels ("Deposit-to-Delivery" vs "Deposit Conversion Rate") make the audience wonder if these are different metrics. Before finalizing, grep for each metric name and verify it matches everywhere.
+
+**Metrics must be specific and measurable.** Avoid vague metric names like "Product usage %" or "Engagement." Every metric should be concrete enough that someone could build a dashboard for it. "Application completion time" is measurable; "Product usage %" is not. When reviewing metrics on a slide, ask: could an engineer instrument this today?
+
+**Each learning must be distinct.** On a results/learnings slide, every learning card must reference a different insight. If two learnings tell the same story (e.g., both about an AI prototype), the audience notices and it weakens the slide. Cover different dimensions: data strategy, stakeholder management, technical trade-offs, customer empathy.
+
+**Include presenter identity on the title slide.** Even a subtle footnote with the presenter's name is necessary. In remote sessions, people join late. They need to know whose presentation they're watching without asking.
+
+**Let the work speak — cut self-promotion.** Avoid closing statements like "I'm ready to do this again" or "I'm excited to bring this to [Company]." They don't add information. End on substance: a concrete action plan, a guiding principle, or a strong final data point.
+
+**Responsive breakpoints should be mobile-only.** Set collapse breakpoints at ~600px, not 1100px. Most laptop browsers are 1100-1400px wide — triggering a responsive collapse at 1100px breaks the layout during a live presentation. Three-column grids, phase cards, and metric tiles should stay side-by-side on any normal screen.
+
+**Flag dense slides for pacing.** If a slide has more than 10 distinct items (e.g., a journey map with 17 products), add a note in the slide structure plan warning the presenter that this slide could take 5-6 minutes. Suggest which parts to skim and which to emphasize.
+
 ## Step 4: Verify the Presentation
 
 After generating the HTML file, verify it works:
